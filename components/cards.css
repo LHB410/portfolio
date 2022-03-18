@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,700;1,100&display=swap');
+
+.project-card {
+  width: fit-content;
+  display: flex;
+}
+
+.project-container {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.project-info {
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  padding: 0 0 0 0;
+  font-family: 'Roboto Serif', serif;
+}
+
+.dev-icons {
+  font-size: 32px;
+}
+

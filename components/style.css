@@ -1,0 +1,9 @@
+/* components cards */
+@import '/components/banner.css';
+@import '/components/avatar.css';
+@import '/components/main-wrapper.css';
+@import '/components/cards.css';
+@import '/components/devices.css';
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,700;1,100&display=swap');
