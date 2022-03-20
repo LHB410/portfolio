@@ -23,6 +23,17 @@
 }
 
 .dev-icons {
-  font-size: 32px;
+  font-size: 38px;
+}
+
+.socials-card {
+  width: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 1rem;
 }
 

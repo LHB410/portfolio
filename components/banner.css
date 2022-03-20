@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,700;1,100&display=swap');
 .banner {
-  background-size: cover;
-  background-position: center;
   padding: 125px 0;
   padding-bottom: 80px;
   display: flex;
-  flex-direction: column;
-
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 48px;
   font-weight: bold;
@@ -20,7 +16,8 @@
 
 .banner h2 {
   margin: 0.7rem;
-  color: white;
+  margin-left: 0rem;
+  color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 40px;
   font-family: 'Roboto Serif', serif;
@@ -28,8 +25,8 @@
 
 .banner p {
   font-size: 32px;
-  color: white;
-  opacity: .7;
+  color: black;
+  opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-family: 'Roboto Serif', serif;
   font-weight: 500;
@@ -43,4 +40,19 @@
   font-size: 7rem;
   margin-top: 4rem;
   padding-top: 4rem;
+}
+
+.avatar-card {
+  padding: 5rem;
+  margin: 4rem;
+  background-color: whitesmoke;
+  display: flex;
+  border-radius: 1rem;
+
+}
+
+.avatar-info {
+ flex-direction: column;
+ justify-content: space-between;
+ margin-right: 19rem;
 }
