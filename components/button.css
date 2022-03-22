@@ -8,6 +8,7 @@
   text-decoration: none;
   border: 2px solid;
   border-color: rgb(107, 105, 107);
+  position: relative;
 }
 
 .my-btn:hover {
@@ -26,9 +27,14 @@
   border: 2px solid;
   border-color: rgb(107, 105, 107);
   margin-left: 16px;
+  position: relative;
 }
 
 .my-btn-code:hover {
   background: #472950;
   color: white;
+}
+
+#buttons {
+  flex: auto;
 }

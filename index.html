@@ -18,7 +18,9 @@
   <script src="https://kit.fontawesome.com/6189465c73.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <!-- responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <meta charset="utf-8">
   <title>My profile page</title>
 </head>
@@ -43,46 +45,43 @@
     </div>
 
     <div class="container">
+
       <div class="main-wrapper">
         <h1>---- My Projects ----</h1>
         <hr>
 
         <!-- care around -->
-        <div class="project-container">
-          <div class="device device-iphone-x">
-            <div class="device-frame">
-              <img class="device-content" src="./images/carearound.png">
+        <div class="container">
+          <div class="project-container" id="primary">
+            <div class="device device-iphone-x">
+              <div class="device-frame">
+                <img class="device-content" src="./images/carearound.png">
+              </div>
+              <div class="device-stripe"></div>
+              <div class="device-header"></div>
+              <div class="device-sensors"></div>
+              <div class="device-btns"></div>
+              <div class="device-power"></div>
             </div>
-            <div class="device-stripe"></div>
-            <div class="device-header"></div>
-            <div class="device-sensors"></div>
-            <div class="device-btns"></div>
-            <div class="device-power"></div>
-          </div>
-          <div class="project-info">
-            <h3>CareAround</h3>
-            <h4>Role: Project Manager</h4>
-            <p>A mobile application to find your skincare match in Japan. Carearound used google vision and live translation
-              APIs to deliver an application that allows the customer to quicly and easily identify a suitable product for
-              them. My role included researching and implementing the best servcies to use for backend development and
-              making sure the project was delivered by the team fully functional on time. </p>
-            <div class="dev-icons">
-              <i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-rails-plain"></i><i
-                class="devicon-nodejs-plain"></i><i class="devicon-ruby-plain"></i>
+            <div class="project-info">
+              <h3>CareAround</h3>
+              <h4>Role: Project Manager</h4>
+              <p>A mobile application to find your skincare match in Japan. Carearound used google vision and live translation
+                APIs to deliver an application that allows the customer to quicly and easily identify a suitable product for
+                them. My role included researching and implementing the best servcies to use for backend development and
+                making sure the project was delivered by the team fully functional on time. </p>
+              <div class="dev-icons">
+                <i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-rails-plain"></i><i
+                  class="devicon-nodejs-plain"></i><i class="devicon-ruby-plain"></i>
+              </div>
+              <div id="buttons">
+                <a class="my-btn" href="https://www.carearound.life">View website</a>
+                <a class="my-btn-code" href="https://github.com/oliviercagnat/rails-carearound">View code</a>
+              </div>
             </div>
-            <div>
-              <a class="my-btn" href="https://www.carearound.life">View website</a>
-              <a class="my-btn-code" href="https://github.com/oliviercagnat/rails-carearound">View code</a>
-            </div>
-
-
-
-
-
-
-
           </div>
         </div>
+
 
         <!-- jedi master class -->
 
@@ -148,7 +147,6 @@
 
         </div>
 
-
       </div>
 
       <!-- socials -->
@@ -174,8 +172,6 @@
           </ul>
         </div>
       </div>
-
-
     </div>
 
 
