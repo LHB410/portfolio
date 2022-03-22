@@ -1,0 +1,34 @@
+.my-btn {
+  color: rgb(61, 60, 60);
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: #ddf1cc;
+  transition: background 0.3s ease;
+  font-family: 'Roboto Serif', serif;
+  text-decoration: none;
+  border: 2px solid;
+  border-color: rgb(107, 105, 107);
+}
+
+.my-btn:hover {
+  background: #3a6e45;
+  color: white;
+}
+
+.my-btn-code {
+  color: rgb(61, 60, 60);
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: #edccf1;
+  transition: background 0.3s ease;
+  font-family: 'Roboto Serif', serif;
+  text-decoration: none;
+  border: 2px solid;
+  border-color: rgb(107, 105, 107);
+  margin-left: 16px;
+}
+
+.my-btn-code:hover {
+  background: #472950;
+  color: white;
+}

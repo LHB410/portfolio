@@ -4,6 +4,21 @@
 @import '/components/main-wrapper.css';
 @import '/components/cards.css';
 @import '/components/devices.css';
-
+@import '/components/button.css';
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,700;1,100&display=swap');
+
+/* responsive */
+
+
+
+/* body */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  margin: 0;
+  display: grid;
+  font-family: 'Roboto Serif', serif;
+}

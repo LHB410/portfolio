@@ -24,6 +24,7 @@
 
 .dev-icons {
   font-size: 38px;
+  margin-bottom: 2rem;
 }
 
 .socials-card {
@@ -35,5 +36,20 @@
   margin-top: 32px;
   margin-bottom: 32px;
   border-radius: 1rem;
+  font-family: 'Roboto Serif', serif;
 }
 
+.socials-card p {
+  margin-top: 2rem;
+  font-size: 16px;
+}
+
+.list-inline {
+  display: flex;
+}
+
+#social-icon {
+  color: #85A4DD;
+  font-size: 3rem;
+  padding: 1rem;
+}
