@@ -22,6 +22,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
   <meta charset="utf-8">
+  <!-- form styles -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css"> -->
   <title>My profile page</title>
 </head>
 
@@ -35,7 +41,6 @@
             <h2>Backend Developer</h2>
             <h4>HTML | CSS | Ruby on Rails | JavaScript | React</h4>
             <p>Hi there! Are you looking for good functionality and sleek design? Then I've got what you need. Take a look at my projects below and contact me. I will make your website stand out.</p>
-            <a class="my-btn" href="mailto:laura@laurabrooks.codes">Contact me</a>
           </div>
           <img class="img-circle" src="images/avatar.jpeg">
         </div>
@@ -46,8 +51,8 @@
       </div>
     </div>
 
-    <div class="container">
 
+    <div class="container">
       <div class="main-wrapper">
         <h1>---- My Projects ----</h1>
         <hr>
@@ -67,9 +72,11 @@
           <div class="project-info">
             <h3>CareAround</h3>
             <h4>Role: Project Manager</h4>
-            <p>A mobile application to find your skincare match in Japan. Carearound used Google vision and the DeepL live translation
+            <p>A mobile application to find your skincare match in Japan. Carearound used Google vision and the DeepL live
+              translation
               APIs to deliver an application that allows the customer to quickly and easily identify a suitable product for
-              them by scanning and translating cosmetics in real time. My role included researching and implementing the best servcies to use for backend development and
+              them by scanning and translating cosmetics in real time. My role included researching and implementing the best
+              servcies to use for backend development and
               making sure the project was delivered by the team fully functional on time. </p>
             <div class="dev-icons">
               <i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-rails-plain"></i><i
@@ -123,11 +130,6 @@
         </div>
 
 
-
-
-
-
-
         <!-- gif searcher -->
         <div class="project-container" id="primary">
 
@@ -158,12 +160,52 @@
 
         </div>
 
+        <!-- simple airbnb -->
+        <div class="project-container" id="primary">
+          <div class="project-info">
+            <h3>Simple AirBnB</h3>
+            <h4>Role: Fullstack Developer</h4>
+            <p>A simple web clone of the website Airbnb. Here you can browse and book a flat to rent. Or as an onwer upload a
+              flat to be rented. Built using Ruby on rails and bootstrap it has a clean and simple design. The Mapbox API is
+              used to fetch maps for the flats based on there addresses. My role was designing the entire wesbite. I designed
+              the back end and front end aspects of the site. I used ERB to include easy to read functionality within the
+              HTML. </p>
+            <div class="dev-icons">
+              <i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-rails-plain"></i><i
+                class="devicon-ruby-plain"></i>
+            </div>
+            <div id="buttons">
+              <a class="my-btn-code" href="https://github.com/LHB410/rails-simple-airbnb">View code</a>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="device device-macbook-pro device-spacegray" id="secondary">
+                  <div class="device-frame">
+                    <img class="device-content" src="./images/airbnb.png">
+                  </div>
+                  <div class="device-stripe"></div>
+                  <div class="device-header"></div>
+                  <div class="device-sensors"></div>
+                  <div class="device-btns"></div>
+                  <div class="device-power"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- socials -->
-      <div class="container p-0">
-        <div class="socials-card">
-          <p>Contact me</p>
+    </div>
+
+    <!-- socials -->
+    <div class="container text-center p-0">
+      <div class="socials-card">
+        <p>Contact me</p>
+        <!-- social icons -->
+        <div class="dev-icons">
           <ul class="list-inline">
             <li>
               <a class="button-padding" href="https://www.linkedin.com/in/laura-h-brooks">
@@ -182,10 +224,44 @@
             </li>
           </ul>
         </div>
+
+          <!-- Default form contact -->
+          <form class="text-center p-1 pb-4" action="#!">
+
+            <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+            <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Subject -->
+            <label>Subject</label>
+            <select class="browser-default custom-select mb-4">
+              <option value="" default>Choose option</option>
+              <option value="1" >Job</option>
+              <option value="2">Ask me a question</option>
+            </select>
+
+            <!-- Message -->
+            <div class="form-group">
+              <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+            </div>
+
+            <!-- Copy -->
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+              <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+            </div>
+
+            <!-- Send button -->
+            <button class="btn btn-info btn-block pb-2" type="submit">Send</button>
+
+          </form>
+          <!-- Default form contact -->
       </div>
     </div>
 
-
+  <script src="formScripts.js"></script>
 
 </body>
 
