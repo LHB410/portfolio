@@ -1,6 +1,7 @@
 .img-circle {
   border-radius: 50%;
-  max-width: 19rem;
+  max-width: 23rem;
   width: 100%;
   height: auto;
+  max-height: 23rem;
 }

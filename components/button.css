@@ -36,5 +36,6 @@
 }
 
 #buttons {
-  flex: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
 }

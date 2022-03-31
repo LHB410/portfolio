@@ -8,16 +8,18 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-overflow: clip;
+  grid-area: auto;
 }
 
 .project-info {
-  width: 100%;
+  width: auto;
   align-items: center;
   align-self: center;
   padding: 0 0 0 0;
   font-family: 'Roboto Serif', serif;
   position: relative;
   overflow-wrap: normal;
+  text-overflow: initial;
 }
 
 .dev-icons {
@@ -35,6 +37,7 @@
   margin-bottom: 32px;
   border-radius: 1rem;
   font-family: 'Roboto Serif', serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .socials-card p {

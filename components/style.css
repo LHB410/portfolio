@@ -10,7 +10,9 @@
 
 /* responsive */
 
-
+* {
+  box-sizing: border-box;
+}
 
 /* body */
 html,
