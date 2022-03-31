@@ -25,20 +25,24 @@
 .dev-icons {
   font-size: 38px;
   margin-bottom: 2rem;
+  display: flex;
 }
 
 .socials-card {
-  width: auto;
+  width: 446px;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-left: 25rem;
   border-radius: 1rem;
   font-family: 'Roboto Serif', serif;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  justify-items: center;
 }
+
 
 .socials-card p {
   margin-top: 2rem;
