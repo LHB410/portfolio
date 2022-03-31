@@ -1,10 +1,10 @@
 /* components cards */
-@import 'css/components/cards.css';
-@import 'css/components/avatar.css';
-@import 'css/components/main-wrapper.css';
-@import 'css/components/cards.css';
-@import 'css/components/devices.css';
-@import 'css/components/button.css';
+@import 'cards.css';
+@import 'avatar.css';
+@import 'main-wrapper.css';
+@import 'banner.css';
+@import 'devices.css';
+@import 'button.css';
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,700;1,100&display=swap');
 
