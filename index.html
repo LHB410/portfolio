@@ -226,7 +226,7 @@
         </div>
 
           <!-- Default form contact -->
-          <form class="text-center p-1 pb-4" action="#!">
+          <form class="text-center p-1 pb-4" id="contact-form" name="contact-form" action="mail.php" method="POST">
 
             <!-- Name -->
             <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
@@ -254,7 +254,8 @@
             </div>
 
             <!-- Send button -->
-            <button class="btn btn-info btn-block pb-2" type="submit">Send</button>
+            <a class="my-btn" onclick="validateForm();">Send</a>
+            <div class="status"></div>
 
           </form>
           <!-- Default form contact -->
