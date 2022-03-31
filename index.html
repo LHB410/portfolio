@@ -1,3 +1,14 @@
+<?php
+
+if($_POST["message"]) {
+
+mail("laura@laurabrooks.codes", "Portfolio query",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -23,11 +34,6 @@
   <meta name="HandheldFriendly" content="true">
   <meta charset="utf-8">
   <!-- form styles -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
-  <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
   <title>My profile page</title>
 </head>
 
@@ -225,70 +231,52 @@
           </ul>
         </div>
 
-          <!-- Default form contact -->
-          <form class="text-center p-1 pb-4" id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <div class="container py-4">
 
-            <!-- Name -->
-            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+          <!-- bootstrap form -->
+          <form id="contactForm" action=”mail.php” method=”POST”>
 
-            <!-- Email -->
-            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-            <!-- Subject -->
-            <label>Subject</label>
-            <select class="browser-default custom-select mb-4">
-              <option value="" default>Choose option</option>
-              <option value="1" >Job</option>
-              <option value="2">Ask me a question</option>
-            </select>
-
-            <!-- Message -->
-            <div class="form-group">
-              <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+            <!-- Name input -->
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required"/>
+              <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
             </div>
 
-            <!-- Copy -->
-            <div class="custom-control custom-checkbox mb-4">
-              <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-              <label class="custom-control-label pt-1" for="defaultContactFormCopy">Send me a copy of this message</label>
+            <!-- Email address input -->
+            <div class="mb-3">
+              <label class="form-label" for="emailAddress">Email Address</label>
+              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
             </div>
 
-            <!-- Send button -->
-            <a class="my-btn" onclick="validateForm();">Send</a>
-            <div class="status"></div>
+            <!-- Message input -->
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+            </div>
+
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">Form submission successful!</div>
+            </div>
+
+            <!-- Form submissions error message -->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+
+            <!-- Form submit button -->
+            <div class="d-grid">
+              <button class="my-btn disabled" id="submitButton" type="submit">Submit</button>
+            </div>
 
           </form>
-          <!-- Default form contact -->
+
+        </div>
+
       </div>
     </div>
-
-
-  <script type="text/javascript" src="js/mdb.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>document.querySelector('.status').innerHTML = "Sending...";
-    formData = {
-      'name': $('input[name=name]').val(),
-      'email': $('input[name=email]').val(),
-      'subject': $('input[name=subject]').val(),
-      'message': $('textarea[name=message]').val()
-    };
-
-
-    $.ajax({
-      url: "mail.php",
-      type: "POST",
-      data: formData,
-      success: function (data, textStatus, jqXHR) {
-
-        $('#status').text(data.message);
-        if (data.code) //If mail was sent successfully, reset the form.
-          $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-        $('#status').text(jqXHR);
-      }
-    });
-  </script>
 
 </body>
 
