@@ -255,14 +255,17 @@
 
             <!-- Send button -->
             <a class="my-btn" onclick="validateForm();">Send</a>
-            <div class="status"></div>
+            <div id="status"></div>
 
           </form>
           <!-- Default form contact -->
       </div>
     </div>
 
-  <script>document.getElementById('status').innerHTML = "Sending...";
+
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>document.querySelector('.status').innerHTML = "Sending...";
     formData = {
       'name': $('input[name=name]').val(),
       'email': $('input[name=email]').val(),
