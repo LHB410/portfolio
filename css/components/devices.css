@@ -12,6 +12,7 @@
 .device {
   position: relative;
   transform: scale(1);
+  transform-origin: 50% 0%;
   z-index: 1;
 }
 
@@ -1350,4 +1351,22 @@
   right: 0;
   top: 50%;
   width: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .device {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .device {
+    transform: scale(0.66);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .device {
+    transform: scale(0.5);
+  }
 }
